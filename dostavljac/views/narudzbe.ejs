@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    html,body{
+      background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-simple-food-delivery-meal-fashion-poster-background-yellow-back-image_158378.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<p>Trenutno imate: <%= narudzbe.length %> narudzbi</p>
+<table class="table" style="background: wheat; opacity: 0.7">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Id narudzbe</th>
+    <th scope="col">Restoran id</th>
+    <th scope="col">Jelo id</th>
+    <th scope="col">Korisnik id</th>
+    <th scope="col">Telefon</th>
+    <th scope="col">Ime</th>
+    <th scope="col">Za naplatu: </th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <%for (let i=0; i<narudzbe.length; i++) {%>
+    <tr>
+      <th scope="row">
+        <%= i+1 %>
+      </th>
+      <td><%= narudzbe[i].id%></td>
+      <td><%= narudzbe[i].restoran%></td>
+      <td><%= narudzbe[i].jelo%></td>
+
+      <td><%= narudzbe[i].kupac_id%></td>
+      <td><%= narudzbe[i].telefon%></td>
+      <td><%= narudzbe[i].kupac%></td>
+      <td><%= narudzbe[i].cijena%></td>
+
+      <td>
+        <form action="/dostavio" method="post">
+          <input hidden name="narId" value="<%=narudzbe[i].id%>">
+          <input  hidden name="email" value="<%= narudzbe[i].email%>">
+          <input  hidden name="mail" value="<%= narudzbe[i].mail%>">
+          <select name="dostavio" id="dostavio">
+            <option  value="1" > Dostavio</option>
+            <option value="0" > Nisam dostavio</option>
+          </select>
+
+            <input type="submit" onclick="myFunction()" value="Dostava" class="btn btn-dark" >
+
+            <script>
+              function myFunction() {
+                alert("Dostavljeno");
+              }
+            </script>
+
+
+       <!--   <div>
+            <input hidden type="number" name="dostavio" value="0">
+            <input type="submit" onclick="myFunction()" value="nisam dostavio" class="btn btn-dark" >
+            <script>
+              function myFunction() {
+                alert("Nije dostavljeno");
+              }
+            </script>
+
+          </div>
+-->
+        </form>
+<form method="post" action="/mapa" target="_blank">
+  <input type="number" name="kupac" id="kupac" value="<%=narudzbe[i].kupac_id%>" hidden>
+<input type="submit" value="Prikazi na karti">
+</form>
+
+      </td>
+    </tr>
+  <%}%>
+  </tbody>
+</table>
+</body>
+</html>

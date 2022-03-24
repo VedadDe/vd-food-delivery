@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e084422-00fd-4cb8-8080-7588ed0f1b28" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mclBriCbuZCShpb02DgX96r5Tn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.20" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vedad\WebstormProjects\restoran\views" />
+      <recent name="C:\Users\Vedad\WebstormProjects\restoran" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e084422-00fd-4cb8-8080-7588ed0f1b28" name="Default Changelist" comment="" />
+      <created>1609800627876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609800627876</updated>
+      <workItem from="1609800628984" duration="3823000" />
+      <workItem from="1609843112309" duration="11162000" />
+      <workItem from="1610235601887" duration="3770000" />
+      <workItem from="1610293043470" duration="14760000" />
+      <workItem from="1610312497035" duration="1132000" />
+      <workItem from="1610560040434" duration="1480000" />
+      <workItem from="1611424563066" duration="3520000" />
+      <workItem from="1611441786069" duration="2026000" />
+      <workItem from="1613250853564" duration="6059000" />
+      <workItem from="1613767415678" duration="5403000" />
+      <workItem from="1613994376900" duration="1698000" />
+      <workItem from="1614006282898" duration="3359000" />
+      <workItem from="1614014906722" duration="6000" />
+      <workItem from="1614019675454" duration="326000" />
+      <workItem from="1614020027447" duration="52000" />
+      <workItem from="1614029886643" duration="2848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

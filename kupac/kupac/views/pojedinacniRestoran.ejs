@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= restaurant[id-1].name %></p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">stars</th>
+    <th scope="col">name</th>
+    <th scope="col">food</th>
+    <th scope="col">telephone</th>
+    <th scope="col">address</th>
+  </tr>
+  </thead>
+  <tbody>
+
+
+    <tr>
+      <th scope="row">
+      </th>
+      <td><%= restaurant[id-1].stars%></td>
+      <td><%= restaurant[id-1].name%></td>
+      <td><%= restaurant[id-1].food%></td>
+      <td><%= restaurant[id-1].telephone%></td>
+      <td><%= restaurant[id-1].address%></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>

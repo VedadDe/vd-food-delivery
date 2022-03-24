@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    html,body{
+      background-image: url('https://wallpaperaccess.com/full/16668.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<p style="color: wheat">Do sad uneseno <%= menu.length %> jela</p>
+
+<form method="post" action="/dodaj/jelo" style="text-align: right">
+  <input name="name" id="name" type="text" placeholder="Unesi naziv jela" >
+  <input type="submit" value="Potvrdi unos">
+</form>
+<table class="table" style="background: wheat; opacity: 0.7">
+  <thead>
+  <tr>
+
+    <th scope="col">Jelo id</th>
+    <th scope="col">Ime</th>
+    <th scope="col">Aktivno</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <%for (let i=0; i<menu.length; i++) {%>
+    <table>
+    <tr>
+      <th scope="row">
+      </th>
+      <form method="post" action="/azuriraj/jela">
+
+      <input type="text" name="id" id="id" value="<%=menu[i].id%>">
+      <pre style="display: inline-block">                                               </pre>
+      <input type="text" name="name" id="name" value="<%=menu[i].name%>">
+      <pre style="display: inline-block">                                       </pre>
+
+      <input type="text" name="vidljivo" id="vidljivo" value="<%=menu[i].vidljivo%>">
+
+      <pre style="display: inline-block">                         </pre>
+
+      <input type="submit" value="azuriraj">
+      </form>
+    </tr>
+    </table>
+  <%}%>
+  </tbody>
+</table>
+</body>
+</html>

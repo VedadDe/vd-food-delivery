@@ -1,0 +1,19 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contact-page {
+    padding-top: 20px;
+    background: #a02d12;
+    margin-top: -10px;
+}
+
+.center {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}

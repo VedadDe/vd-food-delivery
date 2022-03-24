@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Meni </title>
+  <style>
+    body{
+      background-image: url('https://wallpaperaccess.com/full/3692584.jpg');
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="opacity: 0.5">
+  <a class="navbar-brand" href="#"> Menu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/dodaj/dostavljaca">Dodaj dostavljaca</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/restaurants/dodaj/jelo">Unesi novo jelo<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/moj/menu">Moj menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/moje/narudzbe">Moje narudžbe</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/moje/akcije">Moje akcije</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/svi/dostavljaci">Pregled svih kurira</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/restaurants/moji/dostavljaci">Pregled mojih kurira</a>
+      </li>
+
+    </ul>
+    <a href="/restaurants/logout" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-log-out"></span> Log out
+    </a>
+</nav>
+
+<p>Dostupno <%= menu.length %></p>
+<br>
+
+<div class="container">
+  <%for (let i=0; i<menu.length; i++) {%>
+
+
+  <div class="col-sm-4">
+    <div class="card">
+      <img src="<%=menu[i].slika%>" alt="Denim Jeans" style="width:300px;height: 200px">
+      <h1><%=menu[i].name%></h1>
+      <p class="price"><%=menu[i].price%>KM</p>
+      <form action="/stavi/na/akciju" method="post">
+            <input hidden name="jelo" value="<%=menu[i].id%>">
+            <input hidden name="restoran" value="<%=user%>">
+            <input type="number" name="cijena" id="cijena" placeholder="unsite novu cijenu">
+            <div>
+              <br>
+              <input type="submit" onclick="myFunction()" value="Snizi" class="btn btn-dark" >
+                <script>
+                    function myFunction() {
+                        alert("Vaša akcija je postavljena, molim protisnite ok!");
+                    }
+                </script>
+
+            </div>
+
+      </form>
+
+      <hr>
+      <form action="/izbrisi/jelo" method="post" >
+        <input hidden name="jelo" value="<%=menu[i].id%>">
+        <div>
+          <input type="submit"  onclick="myFunction()" value="Obrisi jelo" class="btn btn-dark" >
+          <script>
+            function myFunction() {
+              alert("Vaša jelo je obrisano, molim protisnite ok!");
+            }
+          </script>
+        </div>
+      </form>
+    </div>
+  <br>
+  </div>
+
+  <%if (i%3==2) {%>
+  <br>
+  <%}%>
+
+<%}%>
+</div>
+</body>
+</html>

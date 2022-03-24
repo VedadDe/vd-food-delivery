@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2eea749-dac6-4305-b596-99f48d2b6719" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mLtaFAkRi56mSza7kcUShrtXbR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.26" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/poste_prod_popravke" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vedad\WebstormProjects\kupac\views" />
+      <recent name="C:\Users\Vedad\WebstormProjects\kupac" />
+      <recent name="C:\Users\Vedad\WebstormProjects\kupac\routes" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2eea749-dac6-4305-b596-99f48d2b6719" name="Default Changelist" comment="" />
+      <created>1609284761418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609284761418</updated>
+      <workItem from="1609284762690" duration="4407000" />
+      <workItem from="1609362300694" duration="9726000" />
+      <workItem from="1609415798839" duration="710000" />
+      <workItem from="1609762252325" duration="12937000" />
+      <workItem from="1609802312760" duration="1926000" />
+      <workItem from="1609843096810" duration="11000" />
+      <workItem from="1609843122088" duration="5411000" />
+      <workItem from="1609970451059" duration="61000" />
+      <workItem from="1610235493956" duration="1763000" />
+      <workItem from="1610293035782" duration="2890000" />
+      <workItem from="1610316748898" duration="599000" />
+      <workItem from="1610469401294" duration="3140000" />
+      <workItem from="1610560024852" duration="1739000" />
+      <workItem from="1611174143186" duration="3537000" />
+      <workItem from="1611359471765" duration="169000" />
+      <workItem from="1611418780986" duration="10203000" />
+      <workItem from="1612993318456" duration="3178000" />
+      <workItem from="1612998580522" duration="1491000" />
+      <workItem from="1613250827780" duration="12000" />
+      <workItem from="1613257450028" duration="948000" />
+      <workItem from="1613737539393" duration="444000" />
+      <workItem from="1613742471473" duration="368000" />
+      <workItem from="1613743124918" duration="7909000" />
+      <workItem from="1613993889880" duration="190000" />
+      <workItem from="1614002248019" duration="5729000" />
+      <workItem from="1614018860769" duration="257000" />
+      <workItem from="1614026153308" duration="7646000" />
+      <workItem from="1647269482142" duration="1100000" />
+      <workItem from="1647521995034" duration="98000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

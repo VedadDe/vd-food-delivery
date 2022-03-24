@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html,body{
+      background-image: url('https://wallpaperaccess.com/full/3692584.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      color: white;
+      font-family: 'Numans', sans-serif;
+    }
+    form{
+      background-color: brown;
+      width: 15%;
+      border-radius: 10px;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Register</title>
+</head>
+<body>
+<hr>
+<h1 style="color: white">Registruj novo jelo</h1>
+
+<form action="/restaurants/dodaj/jelo" method="POST">
+  <div>
+    <!--<input type="text" id="name" name="name" placeholder="Name" required />-->
+    <label for="name" style="color: white">Izaberite jelo: </label>
+    <select name="name" id="name">
+    <%for (let i=0; i<jelo.length; i++) {%>
+        <option value="<%=jelo[i].name%>"><%=jelo[i].name%></option>
+    <%}%>
+    </select>
+  </div>
+  <div>
+    <input type="number" id="price" name="price" placeholder="Cijena" required />
+  </div>
+  <div>
+    <input type="text" id="slika" name="slika" placeholder="Unesi link slike" required />
+  </div>
+
+  <div>
+    <input type="number" id="restoran" name="restoran" value="<%=id%>"
+           hidden />
+  </div>
+  <div>
+    <input type="submit" onclick="myFunction()" value="Send" />
+    <script>
+      function myFunction() {
+        alert("Vaša jelo je dodato, molim protisnite ok!");
+      }
+    </script>
+  </div>
+
+</form>
+</body>
+</html>

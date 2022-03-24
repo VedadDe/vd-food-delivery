@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="748dd7f7-8587-4dbe-8973-5c3265a5e1b6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1myfoUB0qEQexXyA2zFl3pbZHkZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.20" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vedad\WebstormProjects\admin\views" />
+      <recent name="C:\Users\Vedad\WebstormProjects\admin" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="748dd7f7-8587-4dbe-8973-5c3265a5e1b6" name="Default Changelist" comment="" />
+      <created>1610470926273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610470926273</updated>
+      <workItem from="1610470927535" duration="2961000" />
+      <workItem from="1610560049305" duration="1033000" />
+      <workItem from="1610570897263" duration="74000" />
+      <workItem from="1611094215655" duration="840000" />
+      <workItem from="1611174108112" duration="861000" />
+      <workItem from="1612993329478" duration="5825000" />
+      <workItem from="1613253316693" duration="3377000" />
+      <workItem from="1613737305585" duration="5523000" />
+      <workItem from="1613743131706" duration="1489000" />
+      <workItem from="1613772814421" duration="3160000" />
+      <workItem from="1613994614578" duration="1047000" />
+      <workItem from="1614003911369" duration="16711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

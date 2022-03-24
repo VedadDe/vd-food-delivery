@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Register</title>
+  <style>
+
+    html,body{
+      background-image: url('https://wallpaperaccess.com/full/16668.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+        }
+  </style>
+</head>
+<body>
+<h1 style="color: white">Registruj novi restoran</h1>
+
+<form action="/admin/dodaj/restoran" method="POST">
+  <div>
+    <input type="text" id="name" name="name" placeholder="Name"  uired />
+  </div>
+  <div>
+    <input type="number" id="stars" name="stars" placeholder="Stars"  />
+  </div>
+  <label for="food" style="color: wheat">Tip hrane:</label>
+  <select id="food" name="food">
+    <option value="brza hrana">Brza hrana</option>
+    <option value="kafic">Kafic</option>
+    <option value="pizza">Pizza</option>
+    <option value="slasticarna">Slastičarna</option>
+  </select>
+  <div>
+    <input type="text" id="address" name="address" placeholder="Address"  />
+  </div>
+  <div>
+    <input type="number" id="telephone" name="telephone" placeholder="Unesite Tel " />
+  </div>
+  <div>
+    <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+
+    />
+  </div>
+  <input
+          type="text"
+          id="slika"
+          name="slika"
+          placeholder="Unesite link slike"
+
+  />
+  </div>
+
+
+  <div>
+    <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+
+    />
+  </div>
+
+
+  <div>
+    <input type="submit" value="Send" />
+  </div>
+</form>
+</body>
+</html>

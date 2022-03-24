@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Meni </title>
+  <style>
+    body{
+        background-image: url('https://s2.best-wallpaper.net/wallpaper/3840x2160/1708/Fish-slice-pepper-food_3840x2160.jpg');
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p>Na stanju iz kategorije: <%= menu.length %></p>
+<br>
+
+<div class="container">
+  <%for (let i=0; i<menu.length; i++) {%>
+
+
+  <div class="col-sm-4">
+    <div class="card">
+      <img src="https://sarajevo.travel/assets/photos/places/big/258-ascinica-asdz-9-1584956680.jpg" alt="Denim Jeans" style="width:100%">
+      <h1><%=menu[i].jelo%></h1>
+        <h2><%=menu[i].restoran%></h2>
+      <p class="price"><%=menu[i].price%>KM</p>
+
+
+        <form action="/naruci" method="post">
+            <input hidden name="jelo" value="<%=menu[i].id%>">
+            <input hidden name="restoran" value="<%=menu[i].idrestorana%>">
+            <input hidden name="cijena" value="<%=menu[i].price%>">
+
+            <input hidden name="korisnik" value="<%=user%>">
+            <label for="appt">Odredite vrijeme isporuke: </label>
+            <input type="time" id="appt" name="appt" value="00:00">
+            <label for="komad">Količina: </label>
+            <input type="number" id="komad" name="komad" value="1">
+
+            <div>
+                <input type="submit"  onclick="myFunction()" value="Naruči" class="btn btn-dark" >
+                <script>
+                    function myFunction() {
+                    //    alert("Vaša narudžba je zaprimljena, molim protisnite ok!");
+                    }
+                </script>
+            </div>
+        </form>
+
+    </div>
+  <br>
+  </div>
+
+  <%if (i%3==2) {%>
+  <br>
+  <%}%>
+
+<%}%>
+</div>
+</body>
+</html>
